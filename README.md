@@ -27,7 +27,7 @@ And if you want to view the earlier version of the landing page, you can check t
 
 ## How to View
 
-1. Download both `Landing_page_mk3.html` and `style3.css`. (**I use VSCode as the platform**)
+1. Download both `Landing_page_mk3.html` and `style3.css`. (**I use VSCode as the platform and here I take an example of Landing_page_mk3.html**)
 2. Place them in the same folder/directory.
 3. Open `Landing_page_mk3.html` in your web browser.
 
