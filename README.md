@@ -1,6 +1,6 @@
 # Guerlain_landing_page (By default)
 
-This is a mock-up landing page for the Digital Marketing course. It is mainly used for the new product campaign and the final presentation showcase.
+This is a mock-up landing page for the Digital Marketing course. It is mainly used for the new product campaign and the final presentation showcase. And SUPER BIG WARNING! Never ever use these assests to create a website for any commercial use! This is just an educational mini-project.
 
 ## Mock-up Landing Page Project
 
@@ -36,3 +36,4 @@ You’ll see the latest version (maybe not the latest version by the time you do
 ---
 
 *Feel free to reach out if you have any questions or suggestions!*
+*And Super big WARNING! Never ever use these assests to create a website for any commercial use! This is just an educational mini-project.*
