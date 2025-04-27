@@ -13,6 +13,11 @@ If you want to see the landing page as intended, it is **recommended** to use th
 - `Landing_page_mk3.html`
 - `style3.css`
 
+or you want to see the advanced version:
+
+- `Landing_page_ultra.html`
+- `style_ultra.css`
+
 These files provide the best and most up-to-date version of the landing page design.
 
 And if you want to view the earlier version of the landing page, you can check the following files:
