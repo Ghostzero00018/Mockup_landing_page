@@ -1,0 +1,121 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Didot', serif;
+    background-color: #fffdf7;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .hero {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  .nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 1rem;
+  }
+  .nav a:hover {
+    color: #a78b71;
+  }
+  
+  /* Landing Section */
+  .landing {
+    height: 90vh;
+    background: url('images/landing_background.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .text-block {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 700px;
+  }
+  .tagline {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  .message {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  .cta-button {
+    padding: 12px 30px;
+    background: #1a1a1a;
+    color: white;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  .cta-button:hover {
+    background-color: #a78b71;
+  }
+  
+  /* Collection Section */
+  .collection {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+  }
+  .collection h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  .products {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .product {
+    max-width: 300px;
+  }
+  .product img {
+    width: 100%;
+    border: 1px solid #eee;
+  }
+  .product h3 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+  }
+  .product p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  

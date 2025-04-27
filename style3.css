@@ -1,0 +1,499 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: #fffdf7;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .hero {
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  .nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 1rem;
+  }
+  .nav a:hover {
+    color: #a78b71;
+  }
+  
+  /* Landing */
+  .landing {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .text-block {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 700px;
+  }
+  .tagline {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-style: normal !important;
+  }
+  .message {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  .cta-button {
+    padding: 12px 30px;
+    background: #1a1a1a;
+    color: white;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  .cta-button:hover {
+    background-color: #a8896d;
+  }
+  
+  /* Collection */
+  .collection {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+  }
+  .collection h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  .products {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .product {
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 30px;  /* space below each card */
+  }
+  .product:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+ 
+  .product img {
+    width: 100%;
+    height: 300px;          /* Set a consistent height */
+    object-fit: cover;      /* Ensures the image fills the area without distortion */
+    border: 1px solid #eee;
+    border-radius: 8px;
+  }
+  
+  .product h3 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+  }
+  .product p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Countdown */
+  .countdown {
+    background: #f8f5f2;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .countdown h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .countdown .sub {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  #timer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  #timer div {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 80px;
+    border-radius: 10px;
+  }
+  #timer span {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  #timer small {
+    display: block;
+    font-size: 0.75rem;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  /* Newsletter */
+  .newsletter {
+    background: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .newsletter p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  .newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .newsletter input {
+    padding: 12px;
+    font-size: 1rem;
+    width: 250px;
+    border: 1px solid #ccc;
+  }
+  .newsletter button {
+    padding: 12px 20px;
+    background: #1a1a1a;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .newsletter button:hover {
+    background: #a8896d;
+  }
+  
+/* Media Showcase */
+.media-showcase {
+  padding: 60px 20px;
+  background: #f7f5f3;
+  text-align: center;
+}
+.media-showcase h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.image-gallery img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+.video-wrapper {
+  text-align: center;
+}
+.video-wrapper h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.video-wrapper video {
+  width: 720px;
+  height: 405px;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+  /* Footer */
+  footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .products {
+      flex-direction: column;
+      align-items: center;
+    }
+    #timer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .hero {
+      text-align: center;
+    }
+    .landing .text-block {
+      padding: 20px;
+    }
+    .newsletter form {
+      flex-direction: column;
+    }
+  }
+
+  /* TikTok Badge */
+.tiktok-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  color: #ff0050;
+  margin-bottom: 10px;
+  gap: 5px;
+  font-weight: 600;
+}
+.tiktok-badge img {
+  height: 20px;
+  width: 20px;
+}
+
+/* Shop Now Button (more visible, matches TikTok color) */
+.shop-now-button {
+  background: #ff0050;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  box-shadow: 0 3px 10px rgba(255,0,80,0.08);
+}
+.shop-now-button:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .tagline {
+    font-size: 2rem;
+  }
+  .shop-now-button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+  .video-wrapper video {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 180px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.guerlain-logo-img {
+  height: 38px;      /* Adjust as needed */
+  width: auto;
+  display: inline-block;
+}
+
+.contact {
+  background: #f8f5f0;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1.5px solid #e5e5e5;
+}
+.contact h2 {
+  font-size: 2.2rem;
+  margin-bottom: 36px;
+  color: #a8896d;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contact-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 30px rgba(168,137,109,0.10);
+  padding: 30px 22px;
+  min-width: 180px;
+  max-width: 220px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.contact-card:hover {
+  box-shadow: 0 12px 32px rgba(255,0,80,0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+.contact-icon {
+  height: 38px;
+  width: 38px;
+  margin-bottom: 15px;
+  filter: grayscale(30%);
+}
+.contact-card span {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+.contact-card a {
+  color: #ff0050;
+  font-weight: 600;
+  text-decoration: none;
+  word-break: break-all;
+  font-size: 1.05rem;
+  transition: color 0.15s;
+}
+.contact-card a:hover {
+  color: #a8896d;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    gap: 16px;
+    max-width: 100%;
+  }
+  .contact-card {
+    padding: 22px 10px;
+    min-width: 135px;
+    max-width: 95vw;
+  }
+}
+@media (max-width: 600px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card {
+    width: 90vw;
+    margin: 8px 0;
+  }
+}
+
+/* Store Locator Section */
+.store-locator {
+  background-color: #f9f7f2;
+  padding: 60px 20px;
+  text-align: center;
+}
+.store-locator h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #a8896d;
+}
+.store-locator p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+.store-locator .cta-button {
+  background-color: #ff0050;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Legal Notices, Terms, and Cookie Policy Sections */
+.legal-notices,
+.terms-conditions,
+.cookie-policy {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: left;
+  border-top: 1px solid #e5e5e5;
+}
+.legal-notices h2,
+.terms-conditions h2,
+.cookie-policy h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #a8896d;
+}
+.legal-notices p,
+.terms-conditions p,
+.cookie-policy p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+.legal-notices a,
+.terms-conditions a,
+.cookie-policy a {
+  color: #ff0050;
+  text-decoration: none;
+  font-weight: bold;
+}
+.legal-notices a:hover,
+.terms-conditions a:hover,
+.cookie-policy a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .store-locator h2,
+  .legal-section h2 {
+    font-size: 2rem;
+  }
+
+  .store-locator p,
+  .legal-section p {
+    font-size: 1rem;
+  }
+
+  .store-locator .cta-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+

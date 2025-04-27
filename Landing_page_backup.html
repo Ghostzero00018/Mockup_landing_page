@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guerlain Skincare Launch</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1 class="logo">GUERLAIN</h1>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#newsletter">Subscribe</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="landing" style="background-image: url('Background1.avif');">
+    <div class="text-block">
+      <h2 class="tagline">Illuminate Your Ritual,<br>The Guerlain Way</h2>
+      <p class="message">
+        Discover a revolutionary skincare experience where French artistry meets active innovation. 
+        Awaken your skin’s vitality with our new luxury series.
+      </p>
+      <a href="#collection" class="cta-button">Explore the Collection</a>
+    </div>
+  </section>
+
+  <section class="collection" id="collection">
+    <h2>The Skincare Collection</h2>
+    <div class="products">
+      <div class="product">
+        <img src="Pic1.avif" alt="Radiance Serum" />
+        <h3>ABEILLE ROYALE</h3>
+        <p>LE SÉRUM JEUNESSE</p>
+      </div>
+      <div class="product">
+        <img src="Pic2.avif" alt="Luxury Cream" />
+        <h3>BEE GLOW</h3>
+        <p>Hydratant jeunesse perfecteur</p>
+      </div>
+      <div class="product">
+        <img src="Pic3.avif" alt="Eye Treatment" />
+        <h3>HUILE-EN-BAUME JEUNESSE RÉPARTION INTENSE</h3>
+        <p>La récupération jeunesse des peaux même fragilisées</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="countdown">
+    <h2>Launching Soon</h2>
+    <p class="sub">Be among the first to experience Guerlain's newest ritual in skincare.</p>
+    <div id="timer">
+      <div><span id="days">00</span><small>Days</small></div>
+      <div><span id="hours">00</span><small>Hours</small></div>
+      <div><span id="minutes">00</span><small>Minutes</small></div>
+      <div><span id="seconds">00</span><small>Seconds</small></div>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <h2>Join the Guerlain Circle</h2>
+    <p>Sign up to receive exclusive pre-launch access, product previews, and personalized offers.</p>
+    <form>
+      <input type="email" placeholder="Please enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+<!-- Media Showcase Section -->
+<section class="media-showcase">
+  <h2>Experience the Elegance with Guerlain</h2>
+  <div class="image-gallery">
+    <img src="Picbas4.png" alt="SOIN DU VISAGE">
+    <img src="Picbas5.png" alt="SOIN DU VISAGE">
+    <img src="Picbas6.png" alt="SOIN DU VISAGE">
+  </div>
+
+  <div class="video-wrapper">
+    <h3>Watch the Collection Reveal</h3>
+    <video controls poster="Preview.jpg" width="720" height="405">
+      <source src="Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Guerlain Inspired (This is just a mock-up landing page for Digital Marketing course). Crafted with elegance.</p>
+  </footer>
+
+  <script>
+    const launchDate = new Date("2025-05-07T00:00:00").getTime();
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = launchDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("days").innerText = days.toString().padStart(2, '0');
+      document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+      document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+      document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+      if (distance < 0) {
+        clearInterval(timer);
+        document.getElementById("timer").innerHTML = "Launched!";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
